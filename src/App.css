@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: rgb(36, 36, 36);
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Optional: Align vertically */
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    margin: 0 auto;
+    padding: 25px;
+    background-color: rgb(30, 30, 30);
+    border-radius: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0px 0px 50px rgb(0, 0, 0);
+    align-items: center;
+    text-align: left;
+}
+
+h1 {
+    font-size: 60px;
+    color: white;
+    text-shadow: 0 15px 20px rgb(0, 0, 0);
+    margin: 10px;
+}
+
+.refresh-btn {
+    cursor: pointer;
+    color: white;
+    font-size: 30px;
+    transition: 0.2s ease;
+}
+
+.refresh-btn:hover {
+    color: white;
+    font-size: 25px;
+    transition: 0.2s ease;
+}
+
+.input-section {
+    margin: 10px;
+    width: 100%;
+}
+
+.input-section input {
+    padding-left: 30px;
+    padding-right: 30px;
+    color: rgb(85, 25, 142);
+    border: none;
+    outline: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    height: 60px;
+    width: 80%;
+    font-size: 20px;
+    font-weight: 500;
+}
+.input-section button {
+    height: 60px;
+    width: 20%;
+    background-color: rgb(111, 0, 255);
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.input-section button:hover {
+    background-color: rgb(64, 0, 147);
+    color: rgb(255, 255, 255);
+    transition: 0.2s ease;
+}
+
+.length-span {
+    color: rgb(0, 0, 0);
+}
+
+.selection-section {
+    width: 100%;
+    margin: 10px;
+    display: flex;
+    /* gap: 30px; */
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+
+.selections {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgb(111, 0, 255);
+    padding: 10px 15px;
+    border-radius: 15px;
+    box-shadow: 10px 20px 30px black;
+    font-weight: 500;
+    color: white;
+}
+
+.selections input{
+    cursor: pointer;
+}
+
+/* Add this CSS to style the range input */
+
+.len-label {
+    margin-right: 10px;
+}
+
+input[type="range"] {
+    height: 7px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    appearance: none; /* Remove default styling */
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    background: linear-gradient(black, rgb(92, 0, 162));
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* Add this CSS to style the checkboxes */
+input[type="checkbox"] {
+    margin-right: 5px;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: linear-gradient(black, 10%, rgb(92, 0, 162));
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+    /* transition: 0.3s ease; */
+}
+
+input[type="checkbox"]:checked {
+    background: rgb(107, 213, 0);
+    border: 3px solid #2d0063;
+    /* transition: 0.3s ease; */
+}
+
+footer {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    position: fixed;
+    bottom: 10px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+footer span {
+    color: rgb(0, 255, 242);
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px 15px;
+    }
+    h1 {
+        font-size: 50px;
+    }
+    .selection-section {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .input-section input {
+        width: 100%;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 20px;
+    }
+    .input-section button {
+        width: 100%;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 20px;
+    }
+}

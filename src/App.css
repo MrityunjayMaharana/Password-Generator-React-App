@@ -112,7 +112,7 @@ h1 {
     background-color: rgb(111, 0, 255);
     padding: 10px 15px;
     border-radius: 15px;
-    box-shadow: 10px 20px 30px black;
+    box-shadow: 10px 20px 40px rgb(17, 17, 17);
     font-weight: 500;
     color: white;
 }
@@ -131,7 +131,7 @@ input[type="range"] {
     height: 7px;
     background-color: #ffffff;
     border: none;
-    border-radius: 2px;
+    border-radius: 5px;
     outline: none;
     appearance: none; /* Remove default styling */
 }
